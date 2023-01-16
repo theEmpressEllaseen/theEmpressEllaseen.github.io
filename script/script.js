@@ -1,6 +1,6 @@
 $(document).ready(function(){
     // light/dark mode and font size
-    if (localStorage.darkMode == 1) {
+    if (localStorage.darkMode === 1) {
         $("*").addClass("dark-mode");
     }
 
