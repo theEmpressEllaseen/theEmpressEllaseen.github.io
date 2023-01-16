@@ -159,7 +159,7 @@ input:focus {
 }
 
 #terms > section {
-  padding: 50px;
+  padding: 0 50px;
   text-align: justify;
 }
 

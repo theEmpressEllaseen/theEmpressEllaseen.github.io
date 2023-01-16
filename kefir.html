@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Milgrad Dairy | create account</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <title>Milgrad Dairy | kefir</title>
+    <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@0;1&family=Poiret+One&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
-    <meta name="keywords" content="milgrad dairy history design about">
+    <meta name="keywords" content="milgrad dairy milk yoghurt">
     <meta name="author" content="Ella Lake">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/50a24806e1.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <script src="../script/script.js"></script>
+    <script src="script/script.js"></script>
   </head>
 
   <body class="product-page">
@@ -22,7 +22,7 @@
           <li id="search-button"><i class="fa-solid fa-magnifying-glass"></i></li>
           <li><a href="index.html">home</a></li>
           <li><a href="all.html">shop</a></li>
-          <li><img src="../assets/logo.png" alt="Milgrad Dairy logo" id="logo"></li>
+          <li><img src="assets/logo.png" alt="Milgrad Dairy logo" id="logo"></li>
           <li><a href="about.html">about</a></li>
           <li><a href="account.html">account</a></li>
           <li id="basket-button"><a href="basket.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
@@ -37,58 +37,49 @@
           <li><button type="button" name="button" id="light-mode">&#9788;</button></li>
           <li><button type="button" name="button" id="dark-mode">&#9790;</button></li>
         </ul>
-        <img src="../assets/banner.png" alt="All of our products">
+        <img src="assets/banner.png" alt="All of our products">
         <p>ordinary happiness from milgrad.</p>
       </div>
     </header>
 
     <div class="card-container">
-      <div class="card-item product-card">
-        <h1>create an account:</h1>
-      </div>
-
-      <div class="card-item white-card">
-        <form action="account.html" id="account-form">
-          <select name="title" id="title" required>
-            <option value="" selected disabled>title:</option>
-            <option value="Mr">Mr</option>
-            <option value="Ms">Ms</option>
-            <option value="Mx">Mx</option>
-          </select>
-          <label for="fname">first name:</label>
-          <input type="text" id="fname" name="fname" pattern="[A-Za-z]+" required>
-          <label for="lname">last name:</label>
-          <input type="text" id="lname" name="lname" pattern="[A-Za-z]+" required>
-          <label for="email">email:</label>
-          <input type="email" id="email" name="email" required>
-          <label for="pwd">password:</label>
-          <input type="password" id="pwd" name="pwd" required>
-          <label for="check-terms">i have read the terms and conditions <a href="terms.html" target="_blank">here</a></label>
-          <input type="checkbox" id="check-terms" name="check-terms" required>
-          <input type="submit" value="submit">
-        </form>
-      </div>
-
       <div class="card-item white-card">
         <video controls autoplay muted>
-          <source src="../assets/video/love.mp4" type="video/mp4">
+          <source src="assets/video/milk.mp4" type="video/mp4">
           Sorry, your browser does not support this video :(
         </video>
+      </div>
+
+      <div class="card-item product-card">
+        <p>kefir</p>
+        <img class="thumbnail" src="assets/kefir.png" alt="Kefir carton">
+        <div class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content">
+          <div class="caption"></div>
+        </div>
+      </div>
+
+      <div class="card-item white-card">
+        <p>fermented probiotic drink.<br><br>a rich source of calcium, protein, and vitamin B. try it on cereal for a nutritious breakfast.</p>
+        <hr><p>size: 1l</p>
+        <hr><p id="price">£2.50</p>
+        <button class="submit-button" id="add-kefir">add to basket</button>
       </div>
     </div>
 
     <div class="all-products">
-      <img src="../assets/all-products.png" alt="Our product range">
+      <img src="assets/all-products.png" alt="Our product range">
       <a href="all.html" class="submit-button">see all products</a>
     </div>
 
     <div class="instagram">
       <a href="https://www.instagram.com/milgrad.ru/">follow us on instagram!</a>
       <div>
-        <img src="../assets/instagram-1.jpeg" alt="A cat looking at snack bars">
-        <img src="../assets/instagram-2.jpeg" alt="A fridge full of milk">
-        <img src="../assets/instagram-3.jpeg" alt="A tub of blueberry yoghurt">
-        <img src="../assets/instagram-4.jpeg" alt="A shelf of milk">
+        <img src="assets/instagram-1.jpeg" alt="A cat looking at snack bars">
+        <img src="assets/instagram-2.jpeg" alt="A fridge full of milk">
+        <img src="assets/instagram-3.jpeg" alt="A tub of blueberry yoghurt">
+        <img src="assets/instagram-4.jpeg" alt="A shelf of milk">
       </div>
     </div>
 
