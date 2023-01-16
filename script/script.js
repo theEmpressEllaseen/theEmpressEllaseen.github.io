@@ -132,6 +132,7 @@ $(document).ready(function(){
         location.reload();
     })
 
+    let table = $(".table-container table");
     let basketTotal = 0;
     console.log(basketTotal);
     for(var i=1; i<$('.table-container table tbody tr').length; i++) {
