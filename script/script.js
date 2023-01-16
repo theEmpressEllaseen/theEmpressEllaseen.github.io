@@ -1,6 +1,6 @@
 $(document).ready(function(){
     // check for local storage of dark mode and font size
-    if (localStorage.darkMode === 1) {
+    if (localStorage.darkMode == 1) {
         $("*").addClass("dark-mode");
     }
     if (localStorage.fontSize) {
@@ -39,6 +39,7 @@ $(document).ready(function(){
     $("#dark-mode").click(function(){
         $("*").addClass("dark-mode");
         localStorage.setItem("darkMode", "1");
+
     })
     $("#light-mode").click(function(){
         $("*").removeClass("dark-mode");
