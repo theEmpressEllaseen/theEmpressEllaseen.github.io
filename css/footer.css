@@ -1,0 +1,47 @@
+.instagram {
+    padding: 50px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.instagram div {
+    height: 20vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.instagram img {
+    width: 20vw;
+}
+
+.instagram a {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: mediumvioletred;
+    font-family: 'Lobster Two', cursive;
+    font-size: 24px;
+}
+
+footer {
+    height: 100px;
+    padding: 50px;
+    display: flex;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer a {
+    color: white;
+}

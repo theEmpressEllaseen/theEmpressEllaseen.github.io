@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #A7B9D3;
+}
+
+body.white-page {
+  background-color: white;
+}
+
+hr {
+  width: 100%;
+  opacity: 30%;
+}
+
+h1 {
+  color: #0013B2;
+  font-family: 'Lobster Two', cursive;
+  font-size: 48px;
+  text-align: center;
+}
+
+div, div > img {
+  width: 100vw;
+}
+
+button {
+  border: none;
+  background-color: #A7B9D3;
+}
+
+button:hover, .all-products > a:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: mediumvioletred;
+}
+
+li {
+  list-style: none;
+}
+
+.submit-button {
+  padding: 10px;
+  background-color: mediumvioletred;
+  color: white;
+  font-size: 16px;
+  block-size: fit-content;
+}
+
+.dark-mode {
+  background-color: black !important;
+  color: white !important;
+}
+
+.all-products {
+  padding: 50px 0 50px 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.all-products > img {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.card-container {
+  width: 90vw;
+  flex-flow: row wrap;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 5vw 50px 5vw;
+  row-gap: 30px;
+}
+
+.card-item {
+  width: 30%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-item > img {
+  width: auto;
+  max-width: 70%;
+  max-height: 60%;
+}
+
+.card-item > p, hr {
+  width: 60%;
+  text-align: center;
+}
+
+.card-item > a {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  justify-content:center;
+  align-items: flex-end;
+}
+
+.card-item > a > img, .card-item > video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.white-card {
+  box-shadow: 0 0 10px 2px gray;
+  background-color: white;
+}
+
+.product-card > p {
+  color: #0013B2;
+  font-family: 'Lobster Two', cursive;
+  font-size: 48px;
+  text-align: center;
+}
+
+#small-card-container > * {
+  height: 300px;
+  padding: 30px 0 30px 0;
+}
+
+#small-card-container > * > a {
+  color: mediumvioletred;
+  font-family: 'Lobster Two', cursive;
+  font-size: 24px;
+}
+
+.card-item > form {
+  width: 80%;
+}
+
+input:not([type=checkbox]), select {
+  height: 30px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+input[type=submit] {
+  height: 50px;
+  background-color: mediumvioletred;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input:focus {
+  border: 3px solid mediumvioletred;
+}
+
+#terms > section {
+  padding: 50px;
+  text-align: justify;
+}

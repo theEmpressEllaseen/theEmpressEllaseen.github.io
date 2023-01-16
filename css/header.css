@@ -1,0 +1,77 @@
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #A7B9D3;
+}
+
+nav a {
+    color: black;
+}
+
+nav a:hover, footer a:hover, #search-button:hover, #basket-button:hover {
+    background-color: mediumvioletred;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-bar {
+    width: 80vw;
+    height: 50px;
+    margin: 2vw 10vw 2vw 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 2px gray;
+    background-color: white;
+}
+
+.nav-bar * {
+    padding: 0 10px 0 10px;
+}
+
+#logo {
+    max-height: 30px;
+    width: auto;
+}
+
+.top-banner {
+    position: relative;
+    padding: 20px 0;
+    background-color: #A7B9D3;
+}
+
+.top-banner p {
+    color: #0013B2;
+    font-family: 'Lobster Two', cursive;
+    font-size: 24px;
+    text-align: center;
+}
+
+#change-page {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 0 1vw 0 0;
+    background-color: #A7B9D3;
+}
+
+#change-page > li {
+    display: inline;
+}
+
+#font-decrease {
+    font-size: x-small;
+}
+
+#regular-font {
+    font-size: small;
+}
+
+#font-increase {
+    font-size: medium;
+}
+
+#light-mode {
+    font-size: large;
+}

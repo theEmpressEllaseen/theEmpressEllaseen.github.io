@@ -1,0 +1,10 @@
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+.dark-mode {
+    background-color: black !important;
+    color: white !important;
+}
