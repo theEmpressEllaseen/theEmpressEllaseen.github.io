@@ -133,7 +133,7 @@ $(document).ready(function(){
     })
 
     let basketTotal = 0;
-    $(".table-container table tbody tr ).each(function(index) {
+    $(".table-container table tbody tr).each(function(index) {
         basketTotal += $(this)children().eq(1).text() *1;
         return basketTotal;
     });
