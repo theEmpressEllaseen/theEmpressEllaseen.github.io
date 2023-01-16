@@ -118,17 +118,21 @@ $(document).ready(function(){
     $(".butter > .quantity").text(butter);
     $(".butter > .total-price").text((butter * $(".butter > .unit-price").text()).toFixed(2));
 
-    $(".kefir > .quantity").text(localStorage.getItem("kefir"));
-    $(".kefir > .total-price").text((localStorage.getItem("kefir") * $(".kefir > .unit-price").text()).toFixed(2));
+    let kefir = parseInt(localStorage.getItem("kefir"));
+    $(".kefir > .quantity").text(kefir);
+    $(".kefir > .total-price").text((kefir * $(".kefir > .unit-price").text()).toFixed(2));
 
-    $(".milk > .quantity").text(localStorage.getItem("milk"));
-    $(".milk > .total-price").text((localStorage.getItem("milk") * $(".milk > .unit-price").text()).toFixed(2));
+    let milk = parseInt(localStorage.getItem("milk"));
+    $(".milk > .quantity").text(milk);
+    $(".milk > .total-price").text((milk * $(".milk > .unit-price").text()).toFixed(2));
 
-    $(".snack-bar > .quantity").text(localStorage.getItem("snackBar"));
-    $(".snack-bar > .total-price").text((localStorage.getItem("snackBar") * $(".snack-bar > .unit-price").text()).toFixed(2));
+    let snackBar = parseInt(localStorage.getItem("snackBar"));
+    $(".snack-bar > .quantity").text(snackBar);
+    $(".snack-bar > .total-price").text((snackBar * $(".snack-bar > .unit-price").text()).toFixed(2));
 
-    $(".yoghurt > .quantity").text(localStorage.getItem("yoghurt"));
-    $(".yoghurt > .total-price").text((localStorage.getItem("yoghurt") * $(".yoghurt > .unit-price").text()).toFixed(2));
+    let yoghurt = parseInt(localStorage.getItem("yoghurt"));
+    $(".yoghurt > .quantity").text(yoghurt);
+    $(".yoghurt > .total-price").text((yoghurt * $(".yoghurt > .unit-price").text()).toFixed(2));
 
     $("#clear-basket").click(function (){
         localStorage.setItem("butter", "0");
