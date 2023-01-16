@@ -66,15 +66,15 @@ $(document).ready(function(){
     });
 
     // basket processing
-    let butter = 0;
+    /*let butter = 0;
     $("#add-butter").click(function(){
         butter++;
     });
     $(".butter > .quantity").text(butter);
-    $(".butter > .total-price").text((butter * $(".butter > .unit-price").text()).toFixed(2));
+    $(".butter > .total-price").text((butter * $(".butter > .unit-price").text()).toFixed(2));*/
 
 
-    /*if (!localStorage.butter) {
+    if (!localStorage.butter) {
         localStorage.setItem("butter", "0");
     }
     if (!localStorage.kefir) {
@@ -129,5 +129,5 @@ $(document).ready(function(){
 
     $("#clear-basket").click(function (){
         location.reload();
-    })*/
+    })
 });
