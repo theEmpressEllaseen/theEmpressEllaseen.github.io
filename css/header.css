@@ -17,7 +17,7 @@ nav a:hover, footer a:hover, #search-button:hover, #basket-button:hover {
 .nav-bar {
     width: 80vw;
     height: 50px;
-    margin: 2vw 10vw 2vw 10vw;
+    margin: 2vw 10vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@ nav a:hover, footer a:hover, #search-button:hover, #basket-button:hover {
 }
 
 .nav-bar * {
-    padding: 0 10px 0 10px;
+    padding: 0 10px;
 }
 
 #logo {
@@ -50,8 +50,8 @@ nav a:hover, footer a:hover, #search-button:hover, #basket-button:hover {
 
 #change-page {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     padding: 0 1vw 0 0;
     background-color: #A7B9D3;
 }

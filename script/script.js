@@ -1,9 +1,8 @@
 $(document).ready(function(){
-    // light/dark mode and font size
+    // check for local storage of dark mode and font size
     if (localStorage.darkMode === 1) {
         $("*").addClass("dark-mode");
     }
-
     if (localStorage.fontSize) {
         if (localStorage.fontSize > 0) {
             for (let i=0; i<localStorage.fontSize; i++) {
@@ -18,42 +17,40 @@ $(document).ready(function(){
         localStorage.setItem("fontSize", "0");
     }
 
+    // change font size on click
     $("#font-increase").click(function(){
         let fontSize = localStorage.fontSize;
         $("*").css("font-size","+=1");
         ++fontSize;
         localStorage.setItem("fontSize", fontSize);
     });
-
     $("#font-decrease").click(function(){
         let fontSize = localStorage.fontSize;
         $("*").css("font-size","-=1");
         --fontSize;
         localStorage.setItem("fontSize", fontSize);
     });
-
     $("#font-reset").click(function(){
         localStorage.setItem("fontSize", "0");
         location.reload();
     });
 
+    // change between dark and light mode
     $("#dark-mode").click(function(){
         $("*").addClass("dark-mode");
         localStorage.setItem("darkMode", "1");
     })
-
     $("#light-mode").click(function(){
         $("*").removeClass("dark-mode");
         localStorage.setItem("darkMode", "0");
     })
 
-    // modal functionality
+    // thumbnail image modal funcionality
     $(".thumbnail").click(function(){
         $(".modal").css("display", "block");
         $(".modal-content").attr("src", $(".thumbnail").attr("src"));
         $(".caption").html(this.alt);
     });
-
     $(".close").click(function(){
         $(".modal").css("display", "none");
     });
@@ -65,7 +62,7 @@ $(document).ready(function(){
         alert("Thanks for creating an account, " + localStorage.getItem("first-name") + "!");
     });
 
-    // basket processing
+    // check for items already in shopping basket
     if (!localStorage.butter) {
         localStorage.setItem("butter", "0");
     }
@@ -82,6 +79,7 @@ $(document).ready(function(){
         localStorage.setItem("yoghurt", "0");
     }
 
+    // add products to basket when selected
     $("#add-butter").click(function(){
         let butter = (parseInt(localStorage.getItem("butter"))) +1;
         localStorage.setItem("butter", butter);
@@ -103,6 +101,7 @@ $(document).ready(function(){
         localStorage.setItem("yoghurt", yoghurt);
     });
 
+    // enter item quantities and prices into basket table
     let butter = parseInt(localStorage.getItem("butter"));
     $(".butter > .quantity").text(butter);
     $(".butter > .total-price").text((butter * $(".butter > .unit-price").text()).toFixed(2));
@@ -123,6 +122,17 @@ $(document).ready(function(){
     $(".yoghurt > .quantity").text(yoghurt);
     $(".yoghurt > .total-price").text((yoghurt * $(".yoghurt > .unit-price").text()).toFixed(2));
 
+    // calculate total cost of basket
+    let column = $("table td:nth-child(4)").map(function(){
+        return $(this).text();
+    }).get();
+    let basketTotal = 0;
+    for (var i in column) {
+        basketTotal += parseFloat(column[i]);
+    }
+    $("#total > td").text("£" + basketTotal.toFixed(2));
+
+    // empty basket
     $("#clear-basket").click(function(){
         localStorage.setItem("butter", "0");
         localStorage.setItem("kefir", "0");
@@ -131,13 +141,4 @@ $(document).ready(function(){
         localStorage.setItem("yoghurt", "0");
         location.reload();
     })
-
-    let table = $(".table-container table");
-    let basketTotal = 0;
-    console.log(basketTotal);
-    for(var i=1; i<$('.table-container table tbody tr').length; i++) {
-        basketTotal += parseInt(table.rows[i].cells[2].innerHTML);
-        console.log(basketTotal);
-    }
-    $("#total > td").text(basketTotal.toFixed(2));
 });
