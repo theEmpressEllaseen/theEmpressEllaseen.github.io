@@ -16,17 +16,31 @@
 
   <body class="white-page">
     <header>
-      <nav>
-        <a id="top"></a>
-        <ul class="nav-bar">
-          <li id="search-button"><i class="fa-solid fa-magnifying-glass"></i></li>
-          <li><a href="index.html">home</a></li>
-          <li><a href="all.html">shop</a></li>
-          <li><img src="assets/logo.png" alt="Milgrad Dairy logo" id="logo"></li>
-          <li><a href="about.html">about</a></li>
-          <li><a href="account.html">account</a></li>
-          <li id="basket-button"><a href="basket.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
-        </ul>
+      <a id="top"></a>
+      <nav class="large-menu">
+        <div class="nav-bar">
+          <a href="oops.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="index.html">home</a>
+          <a href="all.html">shop</a>
+          <img src="assets/logo.png" alt="Milgrad Dairy logo" class="logo">
+          <a href="about.html">about</a>
+          <a href="account.html">account</a>
+          <a href="basket.html"><i class="fa-solid fa-basket-shopping"></i></a>
+        </div>
+      </nav>
+      <nav class="small-menu">
+        <div class="dropdown">
+          <button class="dropdown-button">menu</button>
+          <div class="dropdown-content">
+            <a href="oops.html">search</a>
+            <a href="index.html">home</a>
+            <a href="all.html">shop</a>
+            <a href="about.html">about</a>
+            <a href="account.html">account</a>
+            <a href="basket.html">basket</a>
+          </div>
+          <img src="assets/logo.png" alt="Milgrad Dairy logo" class="logo">
+        </div>
       </nav>
 
       <div class="top-banner">
@@ -97,7 +111,7 @@
 
     <div class="button-container">
       <button class="submit-button" id="clear-basket">clear basket</button>
-      <button class="submit-button">checkout</button>
+      <a class="submit-button" href="oops.html">checkout</a>
     </div>
 
     <div class="all-products">

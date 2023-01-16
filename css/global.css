@@ -20,6 +20,10 @@ h1 {
   text-align: center;
 }
 
+p {
+  text-align: center;
+}
+
 div, div > img {
   width: 100vw;
 }
@@ -43,8 +47,8 @@ li {
   list-style: none;
 }
 
-.submit-button {
-  padding: 10px;
+.submit-button, .dropdown-button {
+  padding: 12px 16px;
   background-color: mediumvioletred;
   color: white;
   font-size: 16px;
@@ -160,6 +164,7 @@ input:focus {
 
 #terms {
   padding: 50px 0;
+  min-height: 300px;
 }
 
 #terms > section {
@@ -211,6 +216,6 @@ th {
   width: 100%;
 }
 
-.button-container button {
+.button-container * {
   margin-right: 50px;
 }
