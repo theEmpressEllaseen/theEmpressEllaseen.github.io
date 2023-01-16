@@ -163,10 +163,17 @@ input:focus {
   text-align: justify;
 }
 
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
 table {
   border-collapse: collapse;
+  margin: 50px;
   width: 100%;
-  padding: 50px;
 }
 
 th, td {
@@ -174,9 +181,22 @@ th, td {
   padding: 8px;
 }
 
-tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(even) {
+  background-color: #D3DCE9;
+}
 
 th {
-  background-color: #04AA6D;
+  background-color: mediumvioletred;
   color: white;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.button-container button {
+  margin-right: 50px;
 }

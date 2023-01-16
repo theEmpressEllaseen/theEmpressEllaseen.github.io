@@ -42,17 +42,18 @@
       </div>
     </header>
 
-    <table>
-      <thead>
+    <div class="table">
+      <table>
+        <thead>
         <tr>
           <th>product</th>
           <th>quantity</th>
           <th>unit price</th>
           <th>total price</th>
         </tr>
-      </thead>
+        </thead>
 
-      <tbody>
+        <tbody>
         <tr class="butter">
           <td>butter</td>
           <td class="quantity">0</td>
@@ -83,10 +84,15 @@
           <td class="unit-price">1.20</td>
           <td class="total-price">0</td>
         </tr>
-      </tbody>
-    </table>
+        </tbody>
+      </table>
+    </div>
 
-    <button id="clear-basket">clear basket</button>
+    <div class="button-container">
+      <button class="submit-button" id="clear-basket">clear basket</button>
+      <button class="submit-button">checkout</button>
+    </div>
+
     <div class="all-products">
       <img src="../assets/all-products.png" alt="Our product range">
       <a href="all.html" class="submit-button">see all products</a>
