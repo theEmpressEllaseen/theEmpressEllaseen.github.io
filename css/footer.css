@@ -38,8 +38,11 @@ footer {
 footer div {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
+}
+
+footer div * {
+    padding: 0;
 }
 
 footer a {

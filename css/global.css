@@ -140,7 +140,7 @@ li {
 
 input:not([type=checkbox]), select {
   height: 30px;
-  width: 100%;
+  width: 90%;
   margin: 5px 0;
 }
 
@@ -156,6 +156,10 @@ input[type=submit] {
 
 input:focus {
   border: 3px solid mediumvioletred;
+}
+
+#terms {
+  padding: 50px 0;
 }
 
 #terms > section {
