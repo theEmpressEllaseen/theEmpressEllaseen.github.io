@@ -123,7 +123,7 @@ $(document).ready(function(){
     $(".yoghurt > .quantity").text(yoghurt);
     $(".yoghurt > .total-price").text((yoghurt * $(".yoghurt > .unit-price").text()).toFixed(2));
 
-    $("#clear-basket").click(function (){
+    $("#clear-basket").click(function(){
         localStorage.setItem("butter", "0");
         localStorage.setItem("kefir", "0");
         localStorage.setItem("milk", "0");
@@ -133,9 +133,8 @@ $(document).ready(function(){
     })
 
     let basketTotal = 0;
-    $(".table-container table tbody tr").each(function() {
-        basketTotal += $(this)children().eq(1).text() *1;
-        return basketTotal;
-    });
+    for(var i=1; i<$('.table-container table tbody tr').length; i++) {
+        basketTotal += parseInt(table.rows[i].cells[2].innerHTML);
+    }
     $("#total > td").text(basketTotal.toFixed(2));
 });
