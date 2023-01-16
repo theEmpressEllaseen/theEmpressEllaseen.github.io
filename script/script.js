@@ -74,11 +74,8 @@ $(document).ready(function(){
     $(".butter > .total-price").text((butter * $(".butter > .unit-price").text()).toFixed(2));*/
 
 
-    if (localStorage.butter) {
-        console.log("Exists")
-    } else {
+    if (!localStorage.butter) {
         localStorage.setItem("butter", "0");
-        console.log("Created");
     }
     if (!localStorage.kefir) {
         localStorage.setItem("kefir", "0");
