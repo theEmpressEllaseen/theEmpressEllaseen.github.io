@@ -115,7 +115,6 @@ $(document).ready(function(){
     });
 
     let butter = parseInt(localStorage.getItem("butter"));
-    console.log(butter);
     $(".butter > .quantity").text(butter);
     $(".butter > .total-price").text((butter * $(".butter > .unit-price").text()).toFixed(2));
 
