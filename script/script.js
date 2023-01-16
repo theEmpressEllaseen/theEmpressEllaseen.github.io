@@ -66,14 +66,6 @@ $(document).ready(function(){
     });
 
     // basket processing
-    /*let butter = 0;
-    $("#add-butter").click(function(){
-        butter++;
-    });
-    $(".butter > .quantity").text(butter);
-    $(".butter > .total-price").text((butter * $(".butter > .unit-price").text()).toFixed(2));*/
-
-
     if (!localStorage.butter) {
         localStorage.setItem("butter", "0");
     }
