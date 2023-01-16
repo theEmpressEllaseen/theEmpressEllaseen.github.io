@@ -115,7 +115,7 @@ $(document).ready(function(){
     });
 
     let butter = parseInt(localStorage.getItem("butter"));
-    $(".butter > .quantity").text("butter");
+    $(".butter > .quantity").text((butter * 1).toFixed(2));
     $(".butter > .total-price").text((butter * $(".butter > .unit-price").text()).toFixed(2));
 
     let kefir = parseInt(localStorage.getItem("kefir"));
