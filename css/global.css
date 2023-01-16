@@ -163,7 +163,7 @@ input:focus {
   text-align: justify;
 }
 
-.table {
+.table-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -178,7 +178,7 @@ table {
 
 th, td {
   text-align: left;
-  padding: 8px;
+  padding: 12px;
 }
 
 tr:nth-child(even) {
@@ -188,6 +188,16 @@ tr:nth-child(even) {
 th {
   background-color: mediumvioletred;
   color: white;
+}
+
+#total th {
+  text-align: right;
+}
+
+#total * {
+  background-color: mediumvioletred;
+  color: white;
+  font-weight: bold;
 }
 
 .button-container {

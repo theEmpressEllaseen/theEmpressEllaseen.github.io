@@ -131,4 +131,11 @@ $(document).ready(function(){
         localStorage.setItem("yoghurt", "0");
         location.reload();
     })
+
+    let basketTotal = 0;
+    $(".table-container table tbody tr ).each(function(index) {
+        basketTotal += $(this)children().eq(1).text() *1;
+        return basketTotal;
+    });
+    $("#total > td").text(basketTotal.toFixed(2));
 });
