@@ -133,8 +133,10 @@ $(document).ready(function(){
     })
 
     let basketTotal = 0;
+    console.log(basketTotal);
     for(var i=1; i<$('.table-container table tbody tr').length; i++) {
         basketTotal += parseInt(table.rows[i].cells[2].innerHTML);
+        console.log(basketTotal);
     }
     $("#total > td").text(basketTotal.toFixed(2));
 });
