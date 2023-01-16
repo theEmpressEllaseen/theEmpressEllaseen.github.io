@@ -118,19 +118,24 @@ $(document).ready(function(){
     $(".butter > .quantity").text(butter);
     $(".butter > .total-price").text((butter * $(".butter > .unit-price").text()).toFixed(2));
 
-    $(".kefir > .quantity").text(localStorage.getItem("butter"));
-    $(".kefir > .total-price").text((localStorage.getItem("butter") * $(".kefir > .unit-price").text()).toFixed(2));
+    $(".kefir > .quantity").text(localStorage.getItem("kefir"));
+    $(".kefir > .total-price").text((localStorage.getItem("kefir") * $(".kefir > .unit-price").text()).toFixed(2));
 
-    $(".milk > .quantity").text(localStorage.getItem("butter"));
-    $(".milk > .total-price").text((localStorage.getItem("butter") * $(".milk > .unit-price").text()).toFixed(2));
+    $(".milk > .quantity").text(localStorage.getItem("milk"));
+    $(".milk > .total-price").text((localStorage.getItem("milk") * $(".milk > .unit-price").text()).toFixed(2));
 
-    $(".snack-bar > .quantity").text(localStorage.getItem("butter"));
-    $(".snack-bar > .total-price").text((localStorage.getItem("butter") * $(".snack-bar > .unit-price").text()).toFixed(2));
+    $(".snack-bar > .quantity").text(localStorage.getItem("snackBar"));
+    $(".snack-bar > .total-price").text((localStorage.getItem("snackBar") * $(".snack-bar > .unit-price").text()).toFixed(2));
 
-    $(".yoghurt > .quantity").text(localStorage.getItem("butter"));
-    $(".yoghurt > .total-price").text((localStorage.getItem("butter") * $(".yoghurt > .unit-price").text()).toFixed(2));
+    $(".yoghurt > .quantity").text(localStorage.getItem("yoghurt"));
+    $(".yoghurt > .total-price").text((localStorage.getItem("yoghurt") * $(".yoghurt > .unit-price").text()).toFixed(2));
 
     $("#clear-basket").click(function (){
+        localStorage.setItem("butter", "0");
+        localStorage.setItem("kefir", "0");
+        localStorage.setItem("milk", "0");
+        localStorage.setItem("snackBar", "0");
+        localStorage.setItem("yoghurt", "0");
         location.reload();
     })
 });
